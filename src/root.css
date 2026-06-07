@@ -1,3 +1,39 @@
+@import url('./assets/fonts/fonts.css');
+
 :root {
+    --main-reg: 'Sora-reg';
+    --main-med: 'Sora-med';
+    --title-semibold: 'Sora-semibold';
+    --title-bold: 'Sora-bold';
+
     --bg-main: #0E3530;
+}
+
+.main-font-r {
+    font-family: var(--main-reg);
+}
+
+.main-font-m {
+    font-family: var(--main-med);
+}
+
+.title-font-sm {
+    font-family: var(--title-semibold);
+}
+
+.title-font-b {
+    font-family: var(--title-bold);
+}
+
+.bg-main {
+    background-color: var(--bg-main);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.2s ease-out;
 }

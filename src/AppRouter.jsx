@@ -1,7 +1,8 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router";
 import MainLayout from "./components/MainLayout";
 import Home from "./pages/Home";
-import Projets from "./pages/Projets";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 function AppRouter() {
   return (
@@ -9,7 +10,8 @@ function AppRouter() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/projets" element={<Projets />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
     </Router>
