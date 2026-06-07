@@ -54,6 +54,7 @@ const projets = [
     gitlink: '/antoine-leca/boutique-en-ligne',
     imageDesktop: img(desktopModules, 'DemetechDesktop.webp'),
     imageMobile:  img(mobileModules,  'DemectechMobile.webp'),
+    url: 'antoine-leca.students-laplateforme.io/Demetech',
   },
   {
     name: 'Echo Book',
@@ -64,6 +65,7 @@ const projets = [
     imageDesktop: img(desktopModules, 'EchoBookDesktop.webp'),
     imageMobile:  img(mobileModules,  'EchoBookMobile.webp'),
     url: 'antoine-leca.students-laplateforme.io/livre-or',
+    
   },
   {
     name: 'Happy Meal',
@@ -73,6 +75,7 @@ const projets = [
     gitlink: '/antoine-leca/happyMeal',
     imageDesktop: img(desktopModules, 'TastyDesktop.webp'),
     imageMobile:  img(mobileModules,  'TastyMobile.webp'),
+    url: 'antoine-leca.students-laplateforme.io/happyMeal',
   },
   {
     name: 'Carteo',

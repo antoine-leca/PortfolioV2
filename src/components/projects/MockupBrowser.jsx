@@ -3,7 +3,9 @@ const MockupBrowser = ({ projet }) => (
     <div className="mockup-browser-toolbar">
       <a
         href={projet.url ? `https://${projet.url}` : ''}
-        className="input border border-base-300 text-sm truncate"
+        className="input border border-base-300 text-sm truncate hover:cursor-pointer"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         {projet.url ? `https://${projet.url}` : projet.name}
       </a>
