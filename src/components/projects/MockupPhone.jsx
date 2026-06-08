@@ -4,7 +4,7 @@ const MockupPhone = ({ projet }) => (
       <img
         src={projet.imageMobile ?? projet.imageDesktop}
         alt={`Aperçu mobile du projet ${projet.name}`}
-        className="w-fit h-full object-cover object-top"
+        className="w-full h-it object-cover object-top"
       />
     </div>
   </div>

@@ -1,17 +1,13 @@
-import { useState } from 'react'
+import HeroSection from '../components/home/HeroSection'
+import SkillsMarquee from '../components/home/SkillsMarquee'
 
 function Home() {
-
   return (
     <>
-      <main>
-        <div style={{ textAlign: 'center', marginTop: '50px' }}>
-          <h1>Bienvenue sur mon Portfolio</h1>
-          <p>Ceci est ma page d'accueil simple.</p>
-        </div>
-      </main>
+      <HeroSection />
+      <SkillsMarquee />
     </>
   )
 }
 
-export default Home;
+export default Home

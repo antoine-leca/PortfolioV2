@@ -3,9 +3,9 @@ import MockupBrowser from './MockupBrowser';
 import MockupPhone from './MockupPhone';
 import ProjetInfo from './ProjetInfo';
 
-const ProjetRow = ({ projet, index }) => {
+const ProjetRow = ({ projet, imageIndex }) => {
   const [mobileView, setMobileView] = useState('phone');
-  const isEven = index % 2 === 0;
+  const isEven = imageIndex !== null ? imageIndex % 2 === 0 : true;
   const showMobile  = projet.ifMobile !== false;
   const showDesktop = !!projet.imageDesktop;
 
@@ -35,7 +35,7 @@ const ProjetRow = ({ projet, index }) => {
   }
 
   const phone = (
-    <div className={`flex shrink-0 ${isEven ? 'justify-center lg:justify-start' : 'justify-center lg:justify-end'}`}>
+    <div className={`flex shrink-0 self-start ${isEven ? 'justify-center lg:justify-start' : 'justify-center lg:justify-end'}`}>
       <MockupPhone projet={projet} />
     </div>
   );

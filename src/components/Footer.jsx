@@ -35,7 +35,7 @@ const Footer = () => {
                 </div>
             </nav>
             <aside>
-                <p>{new Date().getFullYear()}</p>
+                <p>Antoine LECA - {new Date().getFullYear()}</p>
             </aside>
         </footer>
     );

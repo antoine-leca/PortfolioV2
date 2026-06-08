@@ -43,7 +43,7 @@ const ProjetInfo = ({ projet }) => {
               className="btn btn-sm text-white border-none"
               style={{ backgroundColor: '#0E3530' }}
             >
-              Voir le projet →
+              Voir le projet
             </a>
           )}
         </div>

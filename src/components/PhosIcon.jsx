@@ -5,7 +5,11 @@ import {
   HouseIcon,
   LinkedinLogoIcon,
   ListIcon,
-  XIcon
+  XIcon,
+  SwatchesIcon,
+  ArrowDownIcon,
+  SunIcon,
+  MoonIcon,
 } from '@phosphor-icons/react';
 
 const phos = {
@@ -15,7 +19,11 @@ const phos = {
   Github: GithubLogoIcon,
   Doc: FileTextIcon,
   Home: HouseIcon,
-  Cross: XIcon
+  Cross: XIcon,
+  Themes:SwatchesIcon,
+  ArrowDown: ArrowDownIcon,
+  Sun: SunIcon,
+  Moon: MoonIcon,
 };
 
 // Icons component ready to use in pages 
