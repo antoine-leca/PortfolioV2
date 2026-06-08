@@ -17,7 +17,7 @@ const Header = () => {
             <div className="drawer-content flex flex-col">
                 {/* Navbar */}
                 <div className="navbar bg-base-300 w-full">
-                    <a href="/" className="mx-2 flex-1 px-2 text-3xl main-font-m whitespace-nowrap" aria-label="Antoine LECA — Accueil">Antoine LECA</a>
+                    <a href="/" className="mx-2 flex-1 px-2 text-3xl title-font-b whitespace-nowrap hover:text-accent-content" aria-label="Antoine LECA — Accueil">Antoine LECA</a>
                     {/* Desktop : liens + contrôleur de thème */}
                     <nav className="hidden flex-none lg:flex items-center gap-2" aria-label="Navigation principale">
                         <ul className="menu menu-horizontal">

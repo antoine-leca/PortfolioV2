@@ -1,16 +1,25 @@
-# React + Vite
+# Antoine LECA — Portfolio v2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio personnel développé avec React 19, Tailwind CSS v4 et DaisyUI v5.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack
 
-## React Compiler
+| Catégorie | Technologies |
+|-----------|-------------|
+| Framework | React 19, React Router v7 |
+| Style | Tailwind CSS v4, DaisyUI v5, Sora (police) |
+| Formulaire | react-hook-form, EmailJS |
+| Icônes | Phosphor Icons |
+| Build | Vite 8 |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Fonctionnalités notables
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Thème dynamique** — toggle clair/sombre + 15 thèmes spéciaux DaisyUI, persisté en `localStorage`
+- **Bandeau de compétences** — animation CSS infinie, deux rangées en sens opposés, pause au survol
+- **Projets responsive** — toggle Mobile/Desktop sur petits écrans, alternance gauche/droite calculée uniquement sur les rows avec images
+- **Formulaire accessible** — validation react-hook-form, erreurs `role="alert"`, envoi via EmailJS
+- **SEO** — meta description, Open Graph, Twitter Card, `robots.txt`, titres par page (React 19 document metadata)

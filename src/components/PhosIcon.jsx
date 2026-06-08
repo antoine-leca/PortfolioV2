@@ -10,6 +10,7 @@ import {
   ArrowDownIcon,
   SunIcon,
   MoonIcon,
+  CheckFatIcon,
 } from '@phosphor-icons/react';
 
 const phos = {
@@ -24,6 +25,7 @@ const phos = {
   ArrowDown: ArrowDownIcon,
   Sun: SunIcon,
   Moon: MoonIcon,
+  Check: CheckFatIcon,
 };
 
 // Icons component ready to use in pages 

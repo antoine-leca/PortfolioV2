@@ -1,5 +1,6 @@
 import { Link } from 'react-router'
 import picture from '../../assets/img/picture.webp'
+import PhosIcon from '../PhosIcon'
 
 function HeroSection() {
   return (
@@ -54,10 +55,7 @@ function HeroSection() {
           Stack technique
         </p>
         <div className="mt-1 opacity-40">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-            <line x1="12" y1="5" x2="12" y2="19" />
-            <polyline points="19 12 12 19 5 12" />
-          </svg>
+          <PhosIcon name="ArrowDown" size={24}/>
         </div>
       </div>
     </section>
