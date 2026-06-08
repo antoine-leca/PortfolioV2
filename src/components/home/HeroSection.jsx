@@ -49,12 +49,12 @@ function HeroSection() {
         </Link>
       </div>
 
-      <div className="flex flex-col items-center animate-bounce pt-6">
+      <div className="flex flex-col items-center animate-bounce pt-6" aria-hidden="true">
         <p className="text-center text-[11px] tracking-[0.3em] uppercase opacity-40 main-font-r">
           Stack technique
         </p>
         <div className="mt-1 opacity-40">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
             <line x1="12" y1="5" x2="12" y2="19" />
             <polyline points="19 12 12 19 5 12" />
           </svg>

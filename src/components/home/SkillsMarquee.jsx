@@ -17,6 +17,7 @@ function MarqueeRow({ icons, reverse = false }) {
     <div
       className="overflow-hidden marquee-pause"
       style={{ maskImage: MASK, WebkitMaskImage: MASK }}
+      aria-hidden="true"
     >
       <div
         className={`flex ${reverse ? 'marquee-right' : 'marquee-left'}`}
@@ -32,7 +33,7 @@ function MarqueeRow({ icons, reverse = false }) {
 
 function SkillsMarquee() {
   return (
-    <section className="py-16 flex flex-col gap-8">
+    <section className="py-16 flex flex-col gap-8" aria-label="Stack technique">
       <div className="flex flex-col gap-5">
         <MarqueeRow icons={frontendBackendIcons} />
         <MarqueeRow icons={toolsDeployIcons} reverse />

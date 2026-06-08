@@ -48,12 +48,14 @@ const ProjetRow = ({ projet, imageIndex }) => {
           <button
             className={`join-item btn btn-sm ${mobileView === 'phone' ? 'btn-active' : 'btn-ghost'}`}
             onClick={() => setMobileView('phone')}
+            aria-pressed={mobileView === 'phone'}
           >
             Mobile
           </button>
           <button
             className={`join-item btn btn-sm ${mobileView === 'desktop' ? 'btn-active' : 'btn-ghost'}`}
             onClick={() => setMobileView('desktop')}
+            aria-pressed={mobileView === 'desktop'}
           >
             Desktop
           </button>

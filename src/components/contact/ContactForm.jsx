@@ -5,7 +5,7 @@ const Field = ({ legend, error, children }) => (
     <fieldset className="fieldset">
         <legend className="fieldset-legend main-font-m text-sm">{legend}</legend>
         {children}
-        {error && <p className="text-error text-xs mt-1 main-font-r">{error.message}</p>}
+        {error && <p className="text-error text-xs mt-1 main-font-r" role="alert">{error.message}</p>}
     </fieldset>
 );
 
@@ -94,10 +94,10 @@ const ContactForm = () => {
                     )}
 
                     <div className="card-actions justify-end mt-2">
-                        <button type="submit" className="btn btn-neutral main-font-m px-8" disabled={isSubmitting}>
+                        <button type="submit" className="btn btn-neutral main-font-m px-8" disabled={isSubmitting} aria-busy={isSubmitting}>
                             {isSubmitting
-                                ? <span className="loading loading-spinner loading-sm" />
-                                : <PhosIcon name="PaperPlaneTilt" size={18} />}
+                                ? <span className="loading loading-spinner loading-sm" aria-label="Envoi en cours" />
+                                : <PhosIcon name="PaperPlaneTilt" size={18} aria-hidden="true" />}
                             {isSubmitting ? 'Envoi...' : 'Envoyer'}
                         </button>
                     </div>

@@ -1,8 +1,9 @@
 const About = () => (
   <main className="min-h-[80vh]">
-    <title>Antoine LECA - À propos</title>
+    <title>À propos — Antoine LECA</title>
+    <meta name="description" content="Découvrez le parcours d'Antoine LECA, développeur Full Stack passionné par le Mobile First, Tailwind CSS, DaisyUI et les applications web modernes." />
 
-    <div className="divider divider-start pl-6 text-2xl main-font-m">À propos</div>
+    <div className='divider divider-start pl-6 py-6 text-2xl main-font-m'>À propos</div>
     <div className="flex justify-center items-center flex-col">
       <p className="w-9/10 text-xl mb-4 p-2 lg:p-0">
         Approche Mobile First tout au long de mes formations et de mes projets.<br /><br />
