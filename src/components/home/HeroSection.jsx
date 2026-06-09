@@ -40,8 +40,7 @@ function HeroSection() {
       <div className="flex gap-3 flex-wrap justify-center">
         <Link
           to="/projects"
-          className="btn main-font-m text-white border-none"
-          style={{ backgroundColor: 'var(--bg-main)' }}
+          className="btn main-font-m hover:text-accent-content border-none"
         >
           Mes projets
         </Link>
