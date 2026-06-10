@@ -39,7 +39,7 @@ const ProjetInfo = ({ projet }) => {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-lg text-white border-none"
+              className="btn btn-lg border-none"
             >
               Voir le projet
             </a>

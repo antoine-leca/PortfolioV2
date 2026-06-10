@@ -32,8 +32,8 @@ function HeroSection() {
         </p>
       </div>
 
-      <div className="flex items-center gap-2 text-xs main-font-m opacity-60">
-        <span className="w-2 h-2 rounded-full bg-success animate-pulse inline-block" />
+      <div className="flex items-center gap-2 text-xl main-font-m opacity-80">
+        <span className="w-5 h-5 rounded-full bg-success animate-pulse inline-block mb-0.5" />
         Disponible
       </div>
 

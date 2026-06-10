@@ -2,7 +2,7 @@ import ContactForm from '../components/contact/ContactForm';
 import ContactInfos from '../components/contact/ContactInfos';
 
 const Contact = () => (
-    <div className="min-h-screen flex flex-col items-center pb-16 px-4">
+    <div className="min-h-screen flex flex-col items-center pb-16 px-4 lg:px-0">
         <title>Contact — Antoine LECA</title>
         <meta name="description" content="Contactez Antoine LECA pour une opportunité, un projet ou toute autre question. Formulaire de contact et liens directs disponibles." />
 
