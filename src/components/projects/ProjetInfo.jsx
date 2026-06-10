@@ -28,7 +28,7 @@ const ProjetInfo = ({ projet }) => {
               href={`${githubDomain}${projet.gitlink}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-ghost btn-sm gap-2"
+              className="btn btn-ghost btn-lg gap-2"
             >
               <GithubIcon />
               GitHub
@@ -39,8 +39,7 @@ const ProjetInfo = ({ projet }) => {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-sm text-white border-none"
-              style={{ backgroundColor: '#0E3530' }}
+              className="btn btn-lg text-white border-none"
             >
               Voir le projet
             </a>
