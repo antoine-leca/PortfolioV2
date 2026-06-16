@@ -70,7 +70,10 @@ function ThemeController() {
     <div className="flex items-center gap-1">
 
       {/* Toggle light / dark */}
-      <label className="swap swap-rotate btn btn-ghost btn-sm btn-circle">
+      <label 
+        className="swap swap-rotate btn btn-ghost btn-sm btn-circle"
+        aria-label={isLight ? "Activer le thème sombre" : "Activer le thème clair"}
+      >
         <input type="checkbox" checked={!isLight} onChange={toggleDark} />
 
         {/* soleil — thème clair */}

@@ -46,13 +46,15 @@ const Header = () => {
             </div>
             <div className="drawer-side">
                 <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
-                <ul className="menu bg-base-200 min-h-full w-1/2 pt-16 p-4" role="navigation" aria-label="Navigation mobile">
-                    {/* Sidebar content here */}
-                    <li><a className='text-xl main-font-m text-center mb-2' href='/'>Accueil</a></li>
-                    <li><a className='text-xl main-font-m text-center mb-2' href='/about'>À propos</a></li>
-                    <li><a className='text-xl main-font-m text-center mb-2' href='/projects'>Projets</a></li>
-                    <li><a className='text-xl main-font-m text-center' href='/contact'>Contact</a></li>
-                </ul>
+                <nav className="menu bg-base-200 min-h-full w-1/2 pt-16 p-4">
+                    <ul role="navigation" aria-label="Navigation mobile">
+                        {/* Sidebar content here */}
+                        <li><a className='text-xl main-font-m text-center mb-2' href='/'>Accueil</a></li>
+                        <li><a className='text-xl main-font-m text-center mb-2' href='/about'>À propos</a></li>
+                        <li><a className='text-xl main-font-m text-center mb-2' href='/projects'>Projets</a></li>
+                        <li><a className='text-xl main-font-m text-center' href='/contact'>Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     );
