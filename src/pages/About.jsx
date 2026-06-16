@@ -1,9 +1,21 @@
+import { SITE_URL } from '../config/seo';
+
+const PAGE_TITLE = "À propos — Antoine LECA"
+const PAGE_DESCRIPTION = "Découvrez le parcours d'Antoine LECA, développeur Full Stack passionné par le Mobile First, Tailwind CSS, DaisyUI et les applications web modernes."
+
 const About = () => (
   <main className="min-h-[80vh]">
-    <title>À propos - Antoine LECA</title>
-    <meta name="description" content="Découvrez le parcours d'Antoine LECA, développeur Full Stack passionné par le Mobile First, Tailwind CSS, DaisyUI et les applications web modernes." />
+    <title>{PAGE_TITLE}</title>
+    <meta name="description" content={PAGE_DESCRIPTION} />
+    <link rel="canonical" href={`${SITE_URL}/about`} />
+    <meta property="og:url" content={`${SITE_URL}/about`} />
+    <meta property="og:title" content={PAGE_TITLE} />
+    <meta property="og:description" content={PAGE_DESCRIPTION} />
+    {/* TODO: Remplacer og-image.jpg par un vrai visuel (bannière nom + titre + fond) avant mise en prod */}
+    <meta property="og:image" content={`${SITE_URL}/og-image.jpg`} />
+    <meta name="twitter:image" content={`${SITE_URL}/og-image.jpg`} />
 
-    <div className='divider divider-start pl-6 py-6 text-2xl main-font-m'>À propos</div>
+    <h1 className='divider divider-start pl-6 py-6 text-2xl main-font-m'>À propos</h1>
     <div
       className="flex flex-col gap-3 pb-12 w-9/10 mx-auto hyphens-auto"
       style={{ textJustify: "inter-word" }}

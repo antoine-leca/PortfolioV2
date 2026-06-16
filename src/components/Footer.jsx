@@ -1,4 +1,3 @@
-import React from 'react';
 import PhosIcon from './PhosIcon';
 
 const Footer = () => {
