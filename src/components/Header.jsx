@@ -18,8 +18,8 @@ const Header = () => {
                 {/* Navbar */}
                 <div className="navbar bg-base-300 w-full">
                     <a href="/" className="mx-2 flex-1 px-2 text-3xl title-font-b whitespace-nowrap hover:text-accent-content" aria-label="Antoine LECA — Accueil">Antoine LECA</a>
-                    <h2 className='flex-3 text-xl text-center hidden xl:block'>En recherche d'alternance pour Oct 2026</h2>
-                    <h2 className='flex-3 text-xl text-center hidden xl:block'>Marseille, FRANCE</h2>
+                    <p className='flex-3 text-xl text-center hidden xl:block'>En recherche d'alternance pour Oct 2026</p>
+                    <p className='flex-3 text-xl text-center hidden xl:block'>Marseille, FRANCE</p>
                     {/* Desktop : liens + contrôleur de thème */}
                     <nav className="hidden flex-none lg:flex items-center gap-2" aria-label="Navigation principale">
                         <ul className="menu menu-horizontal">
