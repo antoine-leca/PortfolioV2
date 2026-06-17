@@ -1,19 +1,23 @@
 @font-face {
   font-family: 'Sora-reg';
   src: url('./Sora-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Sora-med';
   src: url('./Sora-Medium.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Sora-semibold';
   src: url('./Sora-SemiBold.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Sora-bold';
   src: url('./Sora-Bold.ttf') format('truetype');
+  font-display: swap;
 }

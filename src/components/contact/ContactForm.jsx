@@ -30,7 +30,7 @@ const ContactForm = () => {
                                     minLength: { value: 2, message: 'Au moins 2 caractères' },
                                     maxLength: { value: 50, message: 'Maximum 50 caractères' },
                                 })}
-                                aria-label={legend}
+                                aria-label="Prénom"
                             />
                         </Field>
                         <Field legend="Nom" error={errors.from_lastname}>
@@ -44,7 +44,7 @@ const ContactForm = () => {
                                     minLength: { value: 2, message: 'Au moins 2 caractères' },
                                     maxLength: { value: 50, message: 'Maximum 50 caractères' },
                                 })}
-                                aria-label={legend}
+                                aria-label="Nom"
                             />
                         </Field>
                     </div>
@@ -60,7 +60,7 @@ const ContactForm = () => {
                                 maxLength: { value: 100, message: 'Maximum 100 caractères' },
                                 pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: 'Adresse email invalide' },
                             })}
-                            aria-label={legend}
+                            aria-label="Email"
                         />
                     </Field>
 
@@ -73,9 +73,9 @@ const ContactForm = () => {
                                 required: 'Le sujet est requis',
                                 minLength: { value: 3, message: 'Au moins 3 caractères' },
                                 maxLength: { value: 100, message: 'Maximum 100 caractères' },
-                                
+
                             })}
-                            aria-label={legend}
+                            aria-label="Sujet"
                         />
                     </Field>
 
@@ -88,7 +88,7 @@ const ContactForm = () => {
                                 minLength: { value: 10, message: 'Au moins 10 caractères' },
                                 maxLength: { value: 2000, message: 'Maximum 2000 caractères' },
                             })}
-                            aria-label={legend}
+                            aria-label="Message"
                         />
                     </Field>
 

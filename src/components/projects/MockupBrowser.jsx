@@ -16,6 +16,10 @@ const MockupBrowser = ({ projet }) => (
         src={projet.imageDesktop}
         alt={`Aperçu desktop du projet ${projet.name}`}
         className="w-full h-fit object-cover object-top"
+        width={1280}
+        height={613}
+        loading="lazy"
+        decoding="async"
       />
     </div>
   </div>

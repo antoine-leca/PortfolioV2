@@ -13,12 +13,12 @@ import mysqlIcon     from '../assets/icons/mysql.svg'
 import gitIcon       from '../assets/icons/git.svg'
 import githubIcon    from '../assets/icons/github.svg'
 import dockerIcon    from '../assets/icons/docker.svg'
-import nginxIcon     from '../assets/icons/nginx.png'
-import ovhIcon       from '../assets/icons/ovh.png'
-import tuxIcon       from '../assets/icons/tux.png'
-import sshIcon       from '../assets/icons/ssh.png'
-import ufwIcon       from '../assets/icons/ufw.png'
-import fail2banIcon  from '../assets/icons/fail2ban.png'
+import nginxIcon     from '../assets/icons/nginx.webp'
+import ovhIcon       from '../assets/icons/ovh.webp'
+import tuxIcon       from '../assets/icons/tux.webp'
+import sshIcon       from '../assets/icons/ssh.webp'
+import ufwIcon       from '../assets/icons/ufw.webp'
+import fail2banIcon  from '../assets/icons/fail2ban.webp'
 
 export const frontendBackendIcons = [
   { src: reactIcon,     label: 'React' },
