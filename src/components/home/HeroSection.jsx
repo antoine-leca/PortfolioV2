@@ -15,6 +15,10 @@ function HeroSection() {
             src={picture}
             alt="Antoine LECA"
             className="w-full h-full object-cover"
+            width={640}
+            height={427}
+            loading="eager"
+            fetchpriority="high"
           />
         </div>
       </div>

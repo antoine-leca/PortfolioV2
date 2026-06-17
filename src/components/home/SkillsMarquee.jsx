@@ -5,7 +5,7 @@ const MASK = 'linear-gradient(to right, transparent 0%, black 12%, black 88%, tr
 function IconChip({ src, label }) {
   return (
     <div className="flex flex-col items-center gap-1.5 mx-10 shrink-0">
-      <img src={src} alt={label} className="w-10 h-10 object-contain grayscale opacity-50" />
+      <img src={src} alt={label} className="w-10 h-10 object-contain grayscale opacity-50" width={40} height={40} />
       <span className="text-[11px] main-font-r opacity-40 whitespace-nowrap">{label}</span>
     </div>
   )
