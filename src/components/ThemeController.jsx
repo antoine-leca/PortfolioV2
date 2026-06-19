@@ -87,7 +87,7 @@ function ThemeController() {
       <details ref={detailsRef} className="dropdown dropdown-end">
         <summary className="btn btn-ghost btn-sm list-none gap-1">
           <PhosIcon className="h-5 w-5" name="Themes" weight="fill"/>
-          <span className="text-xs main-font-r hidden md:block">Themes</span>
+          <span className="text-sm main-font-r hidden md:block">Themes</span>
         </summary>
 
         <ul className="dropdown-content bg-base-200 rounded-box z-50 shadow-lg w-52 p-2 mt-1 max-h-80 overflow-y-auto flex flex-col gap-0.5">

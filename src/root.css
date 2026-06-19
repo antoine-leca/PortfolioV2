@@ -61,6 +61,34 @@
     animation-play-state: paused;
 }
 
+@keyframes about-content-in {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.about-card {
+    border-left: 3px solid transparent;
+    transition: border-color 0.4s ease;
+}
+
+.about-card-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-card-wrapper--open {
+    grid-template-rows: 1fr;
+}
+
+.about-card-inner {
+    overflow: hidden;
+}
+
+.about-card--open .about-card-body {
+    animation: about-content-in 0.3s ease-out 0.12s both;
+}
+
 @keyframes bounce-twice {
     0%, 100%  { transform: translateY(0);      animation-timing-function: ease-in; }
     10%, 30%  { transform: translateY(+25%);   animation-timing-function: ease-out; }
