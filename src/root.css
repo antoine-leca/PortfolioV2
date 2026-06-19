@@ -63,7 +63,7 @@
 
 @keyframes bounce-twice {
     0%, 100%  { transform: translateY(0);      animation-timing-function: ease-in; }
-    10%, 30%  { transform: translateY(-25%);   animation-timing-function: ease-out; }
+    10%, 30%  { transform: translateY(+25%);   animation-timing-function: ease-out; }
     20%, 40%  { transform: translateY(0);      animation-timing-function: ease-in; }
     50%       { transform: translateY(0); }
 }
