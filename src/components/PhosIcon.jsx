@@ -11,6 +11,7 @@ import {
   SunIcon,
   MoonIcon,
   CheckFatIcon,
+  MapPinSimpleIcon
 } from '@phosphor-icons/react';
 
 const phos = {
@@ -26,6 +27,7 @@ const phos = {
   Sun: SunIcon,
   Moon: MoonIcon,
   Check: CheckFatIcon,
+  Pin: MapPinSimpleIcon,
 };
 
 // Icons component ready to use in pages 

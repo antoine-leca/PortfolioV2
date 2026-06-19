@@ -41,6 +41,10 @@ function HeroSection() {
         Disponible
       </div>
 
+      <div className="text-xl main-font-m opacity-80">
+        En recherche d'alternance pour Octobre 2026
+      </div>
+
       <div className="flex gap-3 flex-wrap justify-center">
         <Link
           to="/projects"
@@ -53,7 +57,7 @@ function HeroSection() {
         </Link>
       </div>
 
-      <div className="flex flex-col items-center animate-bounce pt-6" aria-hidden="true">
+      <div className="flex flex-col items-center animate-bounce-twice pt-6" aria-hidden="true">
         <p className="text-center text-[11px] tracking-[0.3em] uppercase opacity-40 main-font-r">
           Stack technique
         </p>
