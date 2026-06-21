@@ -14,10 +14,11 @@ const projets = [
     name: "MarsAI Festival by LaPlateforme",
     description: "Projet concours entre plusieurs promo CDPI partout en France au sein de l'Atelier : Cahier des charges, Maquettage et réalisation du site sous concours. Notre groupe, ayant eu 22/25 lors des évaluations, avait été sélectionné pour finaliser et déployer le projet avant changements en interne et refonte par les équipes de l'Atelier. Site de festival/concours de film IA avec ~600 créations attendues via formulaire d'inscription, continuité du MobileFilm Festival. Upload des vidéos sur Scaleway S3, auth JWT, CMS Admin, Système de notation par les Jurys, Traduction i18n... Partenaires du festival : CreativeAI, LHC, Shorts For Changes, Shaikes",
     compétences: ['Bucket S3', 'Scaleway', 'JWT', 'Multer', 'React', 'Node', 'Express', 'Tailwind', 'DaisyUI', 'i18n', 'CMS', ],
-    link : 'https://marsaifestival.com/',
+    link : 'https://marsai.aleca.dev/',
+    gitlink: '/thibaut-matian/marsai',
     imageDesktop: img(desktopModules, 'MarsAIDesktop.webp'),
     imageMobile:  img(mobileModules,  'MarsAIMobile.webp'),
-    url: 'marsaifestival.com'
+    url: 'marsai.aleca.dev'
   },
   {
     name: 'VPS Sécurisé',
