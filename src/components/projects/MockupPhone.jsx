@@ -1,5 +1,5 @@
 const MockupPhone = ({ projet }) => (
-  <div className="mockup-phone border-base-300 shrink-0 max-w-72 rounded-xl">
+  <div className="mockup-phone border-base-300 shrink-0 max-w-72 h-fit rounded-xl">
     <div className="mockup-phone-display rounded-none">
       <img
         src={projet.imageMobile ?? projet.imageDesktop}
