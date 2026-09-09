@@ -1,3 +1,4 @@
+import { Turnstile } from '@marsidev/react-turnstile';
 import PhosIcon from '../PhosIcon';
 import useContactForm from '../../hooks/useContactForm';
 
@@ -10,7 +11,18 @@ const Field = ({ legend, error, children }) => (
 );
 
 const ContactForm = () => {
-    const { register, handleSubmit, onSubmit, errors, isSubmitting, isSubmitSuccessful } = useContactForm();
+    const {
+        register,
+        handleSubmit,
+        onSubmit,
+        errors,
+        isSubmitting,
+        isSubmitSuccessful,
+        turnstileToken,
+        turnstileRef,
+        onTurnstileSuccess,
+        onTurnstileExpire,
+    } = useContactForm();
 
     return (
         <div className="lg:col-span-3 card bg-base-200 shadow-xl">
@@ -73,7 +85,6 @@ const ContactForm = () => {
                                 required: 'Le sujet est requis',
                                 minLength: { value: 3, message: 'Au moins 3 caractères' },
                                 maxLength: { value: 100, message: 'Maximum 100 caractères' },
-
                             })}
                             aria-label="Sujet"
                         />
@@ -92,6 +103,14 @@ const ContactForm = () => {
                         />
                     </Field>
 
+                    <Turnstile
+                        ref={turnstileRef}
+                        siteKey={import.meta.env.VITE_TURNSTILE_SITE_KEY}
+                        onSuccess={onTurnstileSuccess}
+                        onExpire={onTurnstileExpire}
+                        options={{ language: 'fr' }}
+                    />
+
                     {isSubmitSuccessful && (
                         <div role="alert" className="alert alert-success main-font-r text-sm">
                             <PhosIcon name="CheckCircle" size={18} />
@@ -100,7 +119,12 @@ const ContactForm = () => {
                     )}
 
                     <div className="card-actions justify-end mt-2">
-                        <button type="submit" className="btn btn-neutral main-font-m px-8" disabled={isSubmitting} aria-busy={isSubmitting}>
+                        <button
+                            type="submit"
+                            className="btn btn-neutral main-font-m px-8"
+                            disabled={isSubmitting || !turnstileToken}
+                            aria-busy={isSubmitting}
+                        >
                             {isSubmitting
                                 ? <span className="loading loading-spinner loading-sm" aria-label="Envoi en cours" />
                                 : <PhosIcon name="PaperPlaneTilt" size={18} aria-hidden="true" />}
