@@ -31,7 +31,7 @@ function HeroSection() {
           Antoine LECA
         </h1>
         <p className="text-base md:text-lg opacity-55 main-font-r max-w-md leading-relaxed">
-          Je conçois et développe des applications web de A à Z —
+          Je conçois et développe des applications web de A à Z :
           du backend robuste jusqu'à l'interface soignée.
         </p>
       </div>
